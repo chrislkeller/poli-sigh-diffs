@@ -48,6 +48,9 @@ class GrabWebSite(object):
         """
         """
         for page in site["pages"]:
+            file_raw = "_tracked_%s.html" % (page.replace(
+                "http://www.", "").replace("/", ""))
+            that_file = os.path.join(data_directory, file_raw)
             file_name = "_%s_%s.html" % (self.date_string, page.replace(
                 "http://www.", "").replace("/", ""))
             this_file = os.path.join(data_directory, file_name)
@@ -66,6 +69,8 @@ class GrabWebSite(object):
             try:
                 response.raise_for_status()
                 logger.debug("Success! %s responded with a file\n" % (page))
+                with open(that_file, "wb") as output:
+                    output.write(response.content)
                 with open(this_file, "wb") as output:
                     output.write(response.content)
             except requests.exceptions.ReadTimeout as exception:
