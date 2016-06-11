@@ -4,7 +4,6 @@ import time
 import datetime
 import os.path
 import shutil
-from bs4 import BeautifulSoup
 import requests
 from requests.packages.urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
