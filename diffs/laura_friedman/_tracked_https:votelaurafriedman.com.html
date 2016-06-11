@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"78733647f6fe603a6f792c8e7a004cff",petok:"796a10af9d1068a17c4a2a6927c7284febba9b7a-1465603167-1800",zone:"votelaurafriedman.com",rocket:"0",apps:{"ga_key":{"ua":"UA-58396211-19","ga_bs":"2"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=e982913d31/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+
+	<title>Home - Laura Friedman for Assembly</title>
+
+		<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		  	<meta name="msapplication-TileImage" content="/wp-content/themes/candidate/images/ms-tile.png">
+  	<meta name="msapplication-TileColor" content="#ef0303">
+  	<link rel="shortcut icon" sizes="196x196" href="/wp-content/themes/candidate/images/touch-android-highres.png">
+  	<link rel="shortcut icon" sizes="128x128" href="/wp-content/themes/candidate/images/touch-android.png">
+  	<link rel="apple-touch-icon" href="/wp-content/themes/candidate/images/touch-ios-iphone.png">
+  	<link rel="apple-touch-icon" sizes="76x76" href="/wp-content/themes/candidate/images/touch-ios-ipad.png">
+  	<link rel="apple-touch-icon" sizes="120x120" href="/wp-content/themes/candidate/images/touch-ios-iphone-retina.png">
+  	<link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/candidate/images/touch-ios-ipad-retina.png">
+		<link rel="shortcut icon" href="/wp-content/themes/candidate/favicon.ico">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<script>window.jQuery || document.write("<script src='/wp-content/themes/bower_components/jquery/dist/jquery.min.js'>\x3C/script>")</script>
+	<script src="/wp-content/themes/candidate/js/vendor/modernizr.custom.min.js"></script>
+	<script src="/wp-content/themes/bower_components/picturefill/dist/picturefill.min.js" type="text/javascript"></script>
+	<link rel="alternate" type="application/rss+xml" title="Laura Friedman for Assembly RSS Feed" href="https://votelaurafriedman.com/feed/">
+	
+<!-- This site is optimized with the Yoast SEO plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://votelaurafriedman.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Vote Laura Friedman for Assembly" />
+<meta property="og:description" content="During six years on Glendale’s City Council, I have focused on supporting small business and job creation, non-profits and the arts, and environmental sustainability. Now I want to bring that passion and experience to Sacramento." />
+<meta property="og:url" content="https://votelaurafriedman.com/" />
+<meta property="og:site_name" content="Laura Friedman for Assembly" />
+<meta property="og:image" content="https://votelaurafriedman.com/files/2015/11/candidate.jpg" />
+<meta property="og:image:width" content="2665" />
+<meta property="og:image:height" content="2246" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="During six years on Glendale’s City Council, I have focused on supporting small business and job creation, non-profits and the arts, and environmental sustainability. Now I want to bring that passion and experience to Sacramento." />
+<meta name="twitter:title" content="Vote Laura Friedman for Assembly" />
+<meta name="twitter:image" content="https://votelaurafriedman.com/files/2015/11/candidate.jpg" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/votelaurafriedman.com\/","name":"Laura Friedman for Assembly","potentialAction":{"@type":"SearchAction","target":"https:\/\/votelaurafriedman.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<meta name="google-site-verification" content="buobspG07O4VloJOGI4O_DQLjXyQ21aRTc6Lyu9bV0g" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Laura Friedman for Assembly &raquo; Feed" href="https://votelaurafriedman.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Laura Friedman for Assembly &raquo; Comments Feed" href="https://votelaurafriedman.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/votelaurafriedman.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=42cc87ddadc32a8fd22064b784ec1dca"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='afg_swipebox_css-css'  href='/wp-content/plugins/awesome-flickr-gallery-plugin/swipebox/css/swipebox.min.css?ver=42cc87ddadc32a8fd22064b784ec1dca' type='text/css' media='all' />
+<link rel='stylesheet' id='screen-css'  href='/wp-content/themes/candidate-teresa/css/style.min.css?ver=42cc87ddadc32a8fd22064b784ec1dca' type='text/css' media='all' />
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-content/plugins/awesome-flickr-gallery-plugin/swipebox/js/jquery.swipebox.min.js?ver=42cc87ddadc32a8fd22064b784ec1dca'></script>
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-content/plugins/awesome-flickr-gallery-plugin/swipebox/myswipebox.js?ver=42cc87ddadc32a8fd22064b784ec1dca'></script>
+<link rel='https://api.w.org/' href='https://votelaurafriedman.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://votelaurafriedman.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://votelaurafriedman.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://votelaurafriedman.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://votelaurafriedman.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvotelaurafriedman.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://votelaurafriedman.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvotelaurafriedman.com%2F&#038;format=xml" />
+<script src="//d3c3cq33003psk.cloudfront.net/opentag-74688-1711558.js" async defer></script><style type="text/css">/* Start writing your custom CSS here */</style>    
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/candidate/fonts/ptsans.css" />
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/candidate/fonts/ptserif.css" />
+
+    <style type="text/css">
+
+
+    a:link, a:visited {color: #ff4e33;}
+    body.page-template-announcement > header nav {background-color:#ffffff;}
+    #content > #news > header {background-color: #ff4e33;color: #ffffff;}
+    .action a:link, .action a:visited, a.action:link, a.action:visited {background: #ff4e33;color: #ffffff;}
+    #marquee h2 {color: #ffffff;}
+    #issues a:hover {color: #ff4e33;}
+
+  	    html, body {font-family: ptserif; font-weight: 500;}
+    .action a:link, .action a:visited, a.action:link, a.action:visited,
+  	h1,h2,h4,h5,h6,
+    nav,
+    input[type="submit"],
+    a.action,
+    #secondary {font-family: ptsans; font-weight: 700;}
+    section.content,
+    h3,
+    footer,
+    time {font-family: ptserif; font-weight: 500;}
+    a.bookmark,
+    input:not([type="submit"]) {font-family: ptserif;}
+
+          body > header nav ul li a:link,
+      body > header nav ul li a:visited {color: #ffffff;}
+      body.page-template-page-home #menu svg {fill: #09a14a;}
+      #menu svg {fill: #ffffff;}
+      .expand #menu svg {fill: #ff4e33;}
+      #content header h6,
+      #issues a.bookmark:link, #issues a.bookmark:visited, a.bookmark:link, a.bookmark:visited {color: #ff4e33;}
+      input[type="submit"],
+      button.page-template-page-home #bio,
+      .ninja-forms-field-error {background: #ff4e33; color: #ffffff;}
+    	input[type="submit"] {border:2px solid #ff4e33}
+      .page-template-page-home #bio {background: #0b2d72; }
+
+      .action.secondary a:link, .action.secondary a:visited, a.action.secondary:link, a.action.secondary:visited, 
+      .ninja-forms-success-msg {background: #ff4e33;color: #ffffff;}
+
+    	    	h1.site-title a {color: ;}
+
+
+    	      body,
+      body.page-template-announcement > footer a:link, body.page-template-announcement > footer a:visited,
+      body.page-template-announcement section,
+      body.page-template-page-home > header nav ul li a:link, body.page-template-page-home > header nav ul li a:visited  {color: #2c3e50;}
+      body.page-template-page-home > header nav ul,
+      body.page-template-announcement,
+      #content, #content > header h6,
+      .page-template-page-home #bio div, #issues article,
+      p.paid-for,
+      .thankYou,
+      #issues ul {background-color: #ffffff ; color: #08234f;}
+      p.paid-for {border-color:#2c3e50;}
+
+      body.page-template-announcement section > header > h2 {background-color: #0b2d72 ;color: #ffffff;}
+      body.page-template-announcement section,
+      body.page-template-announcement section > header > h2 {border-color:#0b2d72;}
+      body:not(.page-template-page-home):not(.page-template-announcement) > header ul, body:not(.page-template-page-home):not(.page-template-announcement) > header {background-color: #ffffff;}
+      body:not(.page-template-page-home) > header nav ul li a:link, body:not(.page-template-page-home) > header nav ul li a:visited {color: #08234f;}
+
+      body.page-template-page-home,
+      body.page-template-announcement section {background-color: #f2f2f2;}
+      body > footer > div.widget,
+      body.page-template-page-home #marquee .widget,
+      #issues > header h6,
+      #issues > section > header {background-color: #0b2d72;}
+      #content > section > header,
+      footer .widget h2,
+      #marquee label {color: #ffffff;}
+      #issues > header {background-color: #0b2d72;color:#ffffff;}
+      body > footer { background-color: #fbfbfb; }
+      body > footer p:not(.paid-for),
+      body > footer div.vcard,
+      body > footer h2,
+      body > header > a:link,
+      body > footer a:link, body > footer a:visited {color: #2c3e50;}
+      #issues a:visited,
+      #issues a:link {color: #0b2d72;}
+    	      input:not([type="submit"]), textarea {color: #0c1216; background: #d7dadb;}
+
+
+      body.page-template-page-home #bio {background: #0b2d72;}
+
+                                           </style>
+
+  
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-58396211-19']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+
+<body class="home page page-id-82 page-template page-template-page-home page-template-page-home-php candidate-teresa">
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+			</nav><!-- #access -->
+			<header role="banner">
+        <nav role="navigation">
+          <h5 id="menu"><svg viewBox="0 0 48 40"><use xlink:href="/wp-content/themes/candidate/images/menu.svg#menu"></use></svg>Menu</h5>
+  				<ul id="menu-primary-navigation" class="menu"><li id="menu-item-549" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-82 current_page_item menu-item-549"><a href="https://votelaurafriedman.com/">Home</a></li>
+<li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557"><a href="https://votelaurafriedman.com/bio/">Issues</a></li>
+<li id="menu-item-558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-558"><a href="https://votelaurafriedman.com/endorsements/">Endorsements</a></li>
+<li id="menu-item-839" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-839"><a href="https://votelaurafriedman.com/news/">Campaign News</a></li>
+<li id="menu-item-556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556"><a href="https://votelaurafriedman.com/contactus/">Contact Us</a></li>
+<li id="menu-item-559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-559"><a href="https://votelaurafriedman.com/photos/">Photos</a></li>
+<li id="menu-item-623" class="icon twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-623"><a href="https://twitter.com/laurafriedman43">Twitter</a></li>
+<li id="menu-item-624" class="icon facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-624"><a href="https://www.facebook.com/VoteLauraFriedman2013?fref=ts">Facebook</a></li>
+</ul>        </nav>
+
+        
+				
+					<h1 class="site-title"><a href='https://votelaurafriedman.com/' title='Laura Friedman for Assembly' rel='home'><img src='https://votelaurafriedman.com/files/2015/11/logo.png' alt='Laura Friedman for Assembly'></a></h1>
+
+				
+			</header>
+
+<section id="marquee" role="main" class="form-right">
+
+	
+		<header>
+			<h2><a href="https://votelaurafriedman.com/" rel="bookmark" title="Permanent Link to Home">Home</a></h2>
+		</header>
+    <div class="featured-image">
+      
+		<picture>
+		  <!--[if IE 9]><video style="display: none;"><![endif]-->
+		  <source data-srcset="https://votelaurafriedman.com/files/2015/11/candidate-1163x980.jpg 1x, https://votelaurafriedman.com/files/2015/11/candidate-2326x1960.jpg 2x" media="(min-width: 900px)">
+		  <source data-srcset="https://votelaurafriedman.com/files/2015/11/candidate-759x640.jpg 1x, https://votelaurafriedman.com/files/2015/11/candidate-1519x1280.jpg 2x" media="(min-width: 600px)">
+		  <source data-srcset="https://votelaurafriedman.com/files/2015/11/candidate-640x480.jpg 1x, https://votelaurafriedman.com/files/2015/11/candidate-1139x960.jpg 2x" media="(min-width: 0px)">
+		  <!--[if IE 9]></video><![endif]-->
+		  <img class="lazyload" data-srcset="https://votelaurafriedman.com/files/2015/11/candidate.jpg">
+		  <noscript><img class="lazyload" data-srcset="https://votelaurafriedman.com/files/2015/11/candidate.jpg"></noscript>
+		</picture>
+
+	
+		</div>
+
+
+	  <div class="call-to-action">
+    <a class="action" href="//secure.actblue.com/contribute/page/laurafriedman" >Contribute</a></h3>
+  </div>
+
+  <div id="ninja_forms_widget-3" class="widget widget_ninja_forms_widget">	<div id="ninja_forms_form_5_cont" class="ninja-forms-cont">
+		<div id="ninja_forms_form_5_wrap" class="ninja-forms-form-wrap">
+	<h2 class="ninja-forms-form-title">Get Involved!</h2><div id="ninja_forms_form_5_response_msg" style="" class="ninja-forms-response-msg "></div>	<form id="ninja_forms_form_5" enctype="multipart/form-data" method="post" name="" action="" class="ninja-forms-form">
+
+	<input type="hidden" id="_wpnonce" name="_wpnonce" value="ee09e9da07" /><input type="hidden" name="_wp_http_referer" value="/" />	<input type="hidden" name="_ninja_forms_display_submit" value="1">
+	<input type="hidden" name="_form_id"  id="_form_id" value="5">
+		<div class="hp-wrap">
+		<label>If you are a human and are seeing this field, please leave it blank.			<input type="text" value="" name="_7W5fJ">
+			<input type="hidden" value="_7W5fJ" name="_hp_name">
+		</label>
+	</div>
+		<div id="ninja_forms_form_5_all_fields_wrap" class="ninja-forms-all-fields-wrap">
+							<div class="field-wrap text-wrap label-above"  id="ninja_forms_field_9_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_9_type" value="text">
+		<label for="ninja_forms_field_9" id="ninja_forms_field_9_label" class="">First Name 				</label>
+			<input id="ninja_forms_field_9" data-mask="" data-input-limit="" data-input-limit-type="char" data-input-limit-msg="" name="ninja_forms_field_9" type="text" placeholder="First Name" class="ninja-forms-field  " value="" rel="9"   />
+		<div id="ninja_forms_field_9_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+												<div class="field-wrap text-wrap label-above"  id="ninja_forms_field_10_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_10_type" value="text">
+		<label for="ninja_forms_field_10" id="ninja_forms_field_10_label" class="">Last Name 				</label>
+			<input id="ninja_forms_field_10" data-mask="" data-input-limit="" data-input-limit-type="char" data-input-limit-msg="" name="ninja_forms_field_10" type="text" placeholder="Last Name" class="ninja-forms-field  " value="" rel="10"   />
+		<div id="ninja_forms_field_10_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+												<div class="field-wrap text-wrap label-above"  id="ninja_forms_field_11_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_11_type" value="text">
+		<label for="ninja_forms_field_11" id="ninja_forms_field_11_label" class="">Email Address 				</label>
+			<input id="ninja_forms_field_11" data-mask="" data-input-limit="" data-input-limit-type="char" data-input-limit-msg="" name="ninja_forms_field_11" type="text" placeholder="Email Address" class="ninja-forms-field  email " value="" rel="11"   />
+		<div id="ninja_forms_field_11_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+												<div class="field-wrap text-wrap label-above"  id="ninja_forms_field_12_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_12_type" value="text">
+		<label for="ninja_forms_field_12" id="ninja_forms_field_12_label" class="">Phone 				</label>
+			<input id="ninja_forms_field_12" data-mask="(999) 999-9999" data-input-limit="" data-input-limit-type="char" data-input-limit-msg="" name="ninja_forms_field_12" type="text" placeholder="Phone" class="ninja-forms-field  ninja-forms-mask" value="" rel="12"   />
+		<div id="ninja_forms_field_12_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+												<div class="field-wrap checkbox-wrap label-right"  id="ninja_forms_field_13_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_13_type" value="checkbox">
+<input id="" name="ninja_forms_field_13" type="hidden" value="unchecked" /><input id="ninja_forms_field_13" name="ninja_forms_field_13" type="checkbox" class="ninja-forms-field " value="checked"  rel="13"/>		<label for="ninja_forms_field_13" id="ninja_forms_field_13_label" class="">Volunteer 				</label>
+			<div id="ninja_forms_field_13_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+												<div class="field-wrap checkbox-wrap label-right"  id="ninja_forms_field_15_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_15_type" value="checkbox">
+<input id="" name="ninja_forms_field_15" type="hidden" value="unchecked" /><input id="ninja_forms_field_15" name="ninja_forms_field_15" type="checkbox" class="ninja-forms-field " value="checked"  rel="15"/>		<label for="ninja_forms_field_15" id="ninja_forms_field_15_label" class="">Host a Coffee 				</label>
+			<div id="ninja_forms_field_15_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+												<div class="field-wrap checkbox-wrap label-right"  id="ninja_forms_field_16_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_16_type" value="checkbox">
+<input id="" name="ninja_forms_field_16" type="hidden" value="unchecked" /><input id="ninja_forms_field_16" name="ninja_forms_field_16" type="checkbox" class="ninja-forms-field " value="checked"  rel="16"/>		<label for="ninja_forms_field_16" id="ninja_forms_field_16_label" class="">Request a Yard Sign 				</label>
+			<div id="ninja_forms_field_16_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+												<div class="field-wrap checkbox-wrap label-right"  id="ninja_forms_field_17_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_17_type" value="checkbox">
+<input id="" name="ninja_forms_field_17" type="hidden" value="unchecked" /><input id="ninja_forms_field_17" name="ninja_forms_field_17" type="checkbox" class="ninja-forms-field " value="checked"  rel="17"/>		<label for="ninja_forms_field_17" id="ninja_forms_field_17_label" class="">Canvass my Block 				</label>
+			<div id="ninja_forms_field_17_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+												<div class="field-wrap submit-wrap label-above"  id="ninja_forms_field_14_div_wrap" data-visible="1">
+							<input type="hidden" id="ninja_forms_field_14_type" value="submit">
+	<div id="nf_submit_5">
+		<input type="submit" name="_ninja_forms_field_14" class="ninja-forms-field " id="ninja_forms_field_14" value="Submit" rel="14" >
+	</div>
+	<div id="nf_processing_5" style="display:none;">
+		<input type="submit" name="_ninja_forms_field_14" class="ninja-forms-field " id="ninja_forms_field_14" value="Processing" rel="14" disabled>
+	</div>
+		<div id="ninja_forms_field_14_error" style="display:none;" class="ninja-forms-field-error">
+		</div>
+							</div>
+							</div>
+		</form>
+		</div>
+		</div>
+	</div>
+</section>
+
+<div id="content">
+
+  
+  <div id="bio">
+    			<article class="post-52 page type-page status-publish has-post-thumbnail hentry" id="post-52">
+        
+		<picture>
+		  <!--[if IE 9]><video style="display: none;"><![endif]-->
+		  <source data-srcset="https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman-929x980.jpg 1x, https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman-1857x1960.jpg 2x" media="(min-width: 900px)">
+		  <source data-srcset="https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman-607x640.jpg 1x, https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman-1213x1280.jpg 2x" media="(min-width: 600px)">
+		  <source data-srcset="https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman-640x480.jpg 1x, https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman-910x960.jpg 2x" media="(min-width: 0px)">
+		  <!--[if IE 9]></video><![endif]-->
+		  <img class="lazyload" data-srcset="https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman.jpg">
+		  <noscript><img class="lazyload" data-srcset="https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman.jpg"></noscript>
+		</picture>
+
+	
+        <div>
+  				<header>
+  					<h2><a href="https://votelaurafriedman.com/bio/" rel="bookmark" title="Permanent Link to Issues">Laura Friedman, Democrat for the 43rd Assembly District</a></h2>
+  				</header>
+          <p><p>Mom. Wife. Glendale City Councilmember. Environmental Champion. Business Owner. Leading The Fight To Raise The Minimum Wage. Neighborhood Advocate. Water Board Member. Pro Choice. Pro Affordable Housing. Proud Owner Of A Shelter Dog and Two Rescued Cats.</p>
+</p>
+        </div>
+			</article>
+      </div>
+
+  <section id="news">
+    <header>
+      <h2>Campaign News</h2>
+    </header>
+    
+  			<article class="post-1040 post type-post status-publish format-standard hentry" id="post-1040">
+  				<header>
+                          <h3><a href="https://votelaurafriedman.com/2016/06/november-here-we-come/" rel="bookmark" title="Permanent Link to November, Here We Come!">November, Here We Come!</a></h3>
+              					<time datetime="2016-06-09">June 9th, 2016</time>
+  				</header>
+  				<p><p>I am so proud to report that we are headed to the November runoff election! Although the votes are still being counted, it appears that we finished in first place. We wouldn&#8217;t be here without your support! This is the first step towards my having the opportunity to represent you in Sacramento. This will be a very difficult and close race. Today, I ask each and every one of you to join me in doubling our efforts for the runoff election in November. Our campaign represents the positive vision of thousands of voters. There is a lot of work to do in Sacramento to address the challenges so many in the 43rd District and California are facing. I promise that &hellip;</p>
+</p>
+          <p><a class="bookmark" href="https://votelaurafriedman.com/2016/06/november-here-we-come/" rel="bookmark" title="Permanent Link to November, Here We Come!">Read More &hellip;</a></p>
+
+
+  			</article>
+
+
+  	  
+  
+        <ul>
+    
+  			<li class="post-1016 post type-post status-publish format-standard hentry" id="post-1016">
+                      <h4><a href="https://votelaurafriedman.com/2016/05/national-organization-women-now-california-endorses-laura-friedman-43rd-assembly-district/" rel="bookmark" title="Permanent Link to National Organization for Women (NOW) California Endorses Laura Friedman for the 43rd Assembly District!">National Organization for Women (NOW) California Endorses Laura Friedman for the 43rd Assembly District!</a></h4>
+                      <a class="bookmark" href="https://votelaurafriedman.com/2016/05/national-organization-women-now-california-endorses-laura-friedman-43rd-assembly-district/" rel="bookmark" title="Permanent Link to National Organization for Women (NOW) California Endorses Laura Friedman for the 43rd Assembly District!">Read More &hellip;</a>
+  				<time datetime="2016-05-20">May 20th, 2016</time>
+  			</li>
+      
+  			<li class="post-1004 post type-post status-publish format-standard hentry" id="post-1004">
+                      <h4><a href="https://votelaurafriedman.com/2016/05/hollywood-chamber-commerce-endorses-laura-friedman-ad43/" rel="bookmark" title="Permanent Link to Hollywood Chamber of Commerce Endorses Laura Friedman for AD43!">Hollywood Chamber of Commerce Endorses Laura Friedman for AD43!</a></h4>
+                      <a class="bookmark" href="https://votelaurafriedman.com/2016/05/hollywood-chamber-commerce-endorses-laura-friedman-ad43/" rel="bookmark" title="Permanent Link to Hollywood Chamber of Commerce Endorses Laura Friedman for AD43!">Read More &hellip;</a>
+  				<time datetime="2016-05-17">May 17th, 2016</time>
+  			</li>
+      
+  			<li class="post-987 post type-post status-publish format-standard hentry" id="post-987">
+                      <h4><a href="https://votelaurafriedman.com/2016/05/mike-gatto-endorses-laura-friedman-succeed-state-assembly/" rel="bookmark" title="Permanent Link to Mike Gatto Endorses Laura Friedman To Succeed Him In State Assembly!">Mike Gatto Endorses Laura Friedman To Succeed Him In State Assembly!</a></h4>
+                      <a class="bookmark" href="https://votelaurafriedman.com/2016/05/mike-gatto-endorses-laura-friedman-succeed-state-assembly/" rel="bookmark" title="Permanent Link to Mike Gatto Endorses Laura Friedman To Succeed Him In State Assembly!">Read More &hellip;</a>
+  				<time datetime="2016-05-13">May 13th, 2016</time>
+  			</li>
+            <li><a class="action secondary" href="http://laurafriedman.revolutionmessaging.dev/news/ ">View More Updates</a></li>
+  </ul>
+  
+</section>
+
+
+
+
+</div>
+
+
+
+
+<footer>
+	    <div>
+
+		<h1 class="site-title"><a href='https://votelaurafriedman.com/' title='Laura Friedman for Assembly' rel='home'><img src='https://votelaurafriedman.com/files/2015/11/logo.png' alt='Laura Friedman for Assembly'></a></h1>
+
+	  
+  <p class="copyright">&copy; 2016 Copyright Laura Friedman for Assembly 2016</p>
+  
+  
+  <a class="privacy" href="https://votelaurafriedman.com/privacy-policy/">Privacy Policy</a>
+  
+  </div>
+  <nav role="navigation">
+		<ul id="menu-footer-navigation" class="menu"><li id="menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-82 current_page_item menu-item-841"><a href="https://votelaurafriedman.com/">Home</a></li>
+<li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-847"><a href="https://votelaurafriedman.com/bio/">Issues</a></li>
+<li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="https://votelaurafriedman.com/news/">Campaign News</a></li>
+<li id="menu-item-846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-846"><a href="https://votelaurafriedman.com/endorsements/">Endorsements</a></li>
+<li id="menu-item-849" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-849"><a href="https://votelaurafriedman.com/contactus/">Contact Us</a></li>
+<li id="menu-item-850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-850"><a href="https://votelaurafriedman.com/dear-friends/">Join Laura&#8217;s Team!</a></li>
+</ul>    
+		  </nav>
+	<!-- <p><a href="https://votelaurafriedman.com/feed/">Entries (RSS)</a></p> -->
+
+  <div>
+        <a class="action" href="//secure.actblue.com/contribute/page/laurafriedman" >Contribute</a></h3>
+			    <div id="" class="vcard">
+      <div class="org">Laura Friedman for Assembly 2016</div>
+      <div class="adr">
+        <div class="street-address">1009 N. Pacific Ave #4451</div>
+        <span class="locality">Glendale</span>, <span class="region">CA</span>, <span class="postal-code">91222</span>
+        <div class="phone-number"></div>
+      </div> 
+      <a class="email" href="https://votelaurafriedman.com/contactus/">Contact</a>
+    
+    </div>
+  </div>
+  <div class="legal">
+		        <p class="paid-for state">Paid For By Laura Friedman for Assembly 2016 ID#1368792</p>
+	</div>
+</footer>
+
+<script defer src="/wp-content/themes/candidate/js/main.min.js?v=1447776130"></script>
+<script type="application/javascript">
+	Modernizr.load ({
+	test : Modernizr.mq('only all') ,
+	nope : ['/wp-content/themes/bower_components/respond/dest/respond.min.js']
+});
+</script>
+  <script type="text/javascript" src="//d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js"></script>
+
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-includes/js/wp-embed.min.js?ver=42cc87ddadc32a8fd22064b784ec1dca'></script>
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-content/plugins/ninja-forms/deprecated/js/min/jquery.maskedinput.min.js?ver=42cc87ddadc32a8fd22064b784ec1dca'></script>
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-includes/js/jquery/jquery.form.min.js?ver=3.37.0'></script>
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-includes/js/backbone.min.js?ver=1.2.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ninja_forms_settings = {"ajax_msg_format":"inline","password_mismatch":"The passwords provided do not match.","plugin_url":"https:\/\/votelaurafriedman.com\/wp-content\/plugins\/ninja-forms\/deprecated\/","datepicker_args":{"dateFormat":"dd\/mm\/yy"},"currency_symbol":"$","date_format":"dd\/mm\/yy"};
+var thousandsSeparator = ",";
+var decimalPoint = ".";
+var ninja_forms_form_5_settings = {"ajax":"0","hide_complete":"1","clear_complete":"1"};
+var ninja_forms_form_5_calc_settings = {"calc_value":{"13":{"checked":"0","unchecked":"0"},"15":{"checked":"0","unchecked":"0"},"16":{"checked":"0","unchecked":"0"},"17":{"checked":"0","unchecked":"0"}},"calc_fields":[]};
+var ninja_forms_password_strength = {"empty":"Strength indicator","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-content/plugins/ninja-forms/deprecated/js/min/ninja-forms-display.min.js?nf_ver=2.9.47&#038;ver=42cc87ddadc32a8fd22064b784ec1dca'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3085cc542b","applicationID":"4055620","transactionName":"NVxbbEYEDBBWVBJcXAwWeFtADA0NGEcHUlZPUVZVUQ==","queueTime":0,"applicationTime":593,"atts":"GRtYGg4eHx4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

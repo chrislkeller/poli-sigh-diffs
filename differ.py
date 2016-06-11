@@ -29,6 +29,10 @@ class GrabWebSite(object):
             "http://www.loretta.org", "http://www.loretta.org/issues/"]},
         {"dir": "kamala_harris", "pages": [
             "http://www.kamalaharris.org", "http://www.kamalaharris.org/issues/"]},
+        {"dir": "laura_friedman", "pages": [
+            "https://votelaurafriedman.com/", "https://votelaurafriedman.com/bio/", "https://votelaurafriedman.com/news/"]},
+        {"dir": "ardy_kassakhian", "pages": [
+            "http://www.ardyforassembly.com/", "http://www.ardyforassembly.com/issues", "http://www.ardyforassembly.com/news"]},
     ]
 
     date_object = datetime.datetime.now()

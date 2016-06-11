@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"78733647f6fe603a6f792c8e7a004cff",petok:"796a10af9d1068a17c4a2a6927c7284febba9b7a-1465603167-1800",zone:"votelaurafriedman.com",rocket:"0",apps:{"ga_key":{"ua":"UA-58396211-19","ga_bs":"2"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=e982913d31/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+
+	<title>Issues - Laura Friedman for Assembly</title>
+
+		<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		  	<meta name="msapplication-TileImage" content="/wp-content/themes/candidate/images/ms-tile.png">
+  	<meta name="msapplication-TileColor" content="#ef0303">
+  	<link rel="shortcut icon" sizes="196x196" href="/wp-content/themes/candidate/images/touch-android-highres.png">
+  	<link rel="shortcut icon" sizes="128x128" href="/wp-content/themes/candidate/images/touch-android.png">
+  	<link rel="apple-touch-icon" href="/wp-content/themes/candidate/images/touch-ios-iphone.png">
+  	<link rel="apple-touch-icon" sizes="76x76" href="/wp-content/themes/candidate/images/touch-ios-ipad.png">
+  	<link rel="apple-touch-icon" sizes="120x120" href="/wp-content/themes/candidate/images/touch-ios-iphone-retina.png">
+  	<link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/candidate/images/touch-ios-ipad-retina.png">
+		<link rel="shortcut icon" href="/wp-content/themes/candidate/favicon.ico">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<script>window.jQuery || document.write("<script src='/wp-content/themes/bower_components/jquery/dist/jquery.min.js'>\x3C/script>")</script>
+	<script src="/wp-content/themes/candidate/js/vendor/modernizr.custom.min.js"></script>
+	<script src="/wp-content/themes/bower_components/picturefill/dist/picturefill.min.js" type="text/javascript"></script>
+	<link rel="alternate" type="application/rss+xml" title="Laura Friedman for Assembly RSS Feed" href="https://votelaurafriedman.com/feed/">
+	
+<!-- This site is optimized with the Yoast SEO plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://votelaurafriedman.com/bio/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Issues - Laura Friedman for Assembly" />
+<meta property="og:description" content="Mom. Wife. Glendale City Councilmember. Environmental Champion. Business Owner. Leading The Fight To Raise The Minimum Wage. Neighborhood Advocate. Water Board Member. Pro Choice. Pro Affordable Housing. Proud Owner Of A Shelter Dog and Two Rescued Cats." />
+<meta property="og:url" content="https://votelaurafriedman.com/bio/" />
+<meta property="og:site_name" content="Laura Friedman for Assembly" />
+<meta property="og:image" content="https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman.jpg" />
+<meta property="og:image:width" content="2880" />
+<meta property="og:image:height" content="3039" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Mom. Wife. Glendale City Councilmember. Environmental Champion. Business Owner. Leading The Fight To Raise The Minimum Wage. Neighborhood Advocate. Water Board Member. Pro Choice. Pro Affordable Housing. Proud Owner Of A Shelter Dog and Two Rescued Cats." />
+<meta name="twitter:title" content="Issues - Laura Friedman for Assembly" />
+<meta name="twitter:image" content="https://votelaurafriedman.com/files/2015/10/Meet-Laura-Friedman.jpg" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Laura Friedman for Assembly &raquo; Feed" href="https://votelaurafriedman.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Laura Friedman for Assembly &raquo; Comments Feed" href="https://votelaurafriedman.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/votelaurafriedman.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=42cc87ddadc32a8fd22064b784ec1dca"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='afg_swipebox_css-css'  href='/wp-content/plugins/awesome-flickr-gallery-plugin/swipebox/css/swipebox.min.css?ver=42cc87ddadc32a8fd22064b784ec1dca' type='text/css' media='all' />
+<link rel='stylesheet' id='screen-css'  href='/wp-content/themes/candidate-teresa/css/style.min.css?ver=42cc87ddadc32a8fd22064b784ec1dca' type='text/css' media='all' />
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-content/plugins/awesome-flickr-gallery-plugin/swipebox/js/jquery.swipebox.min.js?ver=42cc87ddadc32a8fd22064b784ec1dca'></script>
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-content/plugins/awesome-flickr-gallery-plugin/swipebox/myswipebox.js?ver=42cc87ddadc32a8fd22064b784ec1dca'></script>
+<link rel='https://api.w.org/' href='https://votelaurafriedman.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://votelaurafriedman.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://votelaurafriedman.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://votelaurafriedman.com/?p=52' />
+<link rel="alternate" type="application/json+oembed" href="https://votelaurafriedman.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvotelaurafriedman.com%2Fbio%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://votelaurafriedman.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvotelaurafriedman.com%2Fbio%2F&#038;format=xml" />
+<script src="//d3c3cq33003psk.cloudfront.net/opentag-74688-1711558.js" async defer></script><style type="text/css">/* Start writing your custom CSS here */</style>    
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/candidate/fonts/ptsans.css" />
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/candidate/fonts/ptserif.css" />
+
+    <style type="text/css">
+
+
+    a:link, a:visited {color: #ff4e33;}
+    body.page-template-announcement > header nav {background-color:#ffffff;}
+    #content > #news > header {background-color: #ff4e33;color: #ffffff;}
+    .action a:link, .action a:visited, a.action:link, a.action:visited {background: #ff4e33;color: #ffffff;}
+    #marquee h2 {color: #ffffff;}
+    #issues a:hover {color: #ff4e33;}
+
+  	    html, body {font-family: ptserif; font-weight: 500;}
+    .action a:link, .action a:visited, a.action:link, a.action:visited,
+  	h1,h2,h4,h5,h6,
+    nav,
+    input[type="submit"],
+    a.action,
+    #secondary {font-family: ptsans; font-weight: 700;}
+    section.content,
+    h3,
+    footer,
+    time {font-family: ptserif; font-weight: 500;}
+    a.bookmark,
+    input:not([type="submit"]) {font-family: ptserif;}
+
+          body > header nav ul li a:link,
+      body > header nav ul li a:visited {color: #ffffff;}
+      body.page-template-page-home #menu svg {fill: #09a14a;}
+      #menu svg {fill: #ffffff;}
+      .expand #menu svg {fill: #ff4e33;}
+      #content header h6,
+      #issues a.bookmark:link, #issues a.bookmark:visited, a.bookmark:link, a.bookmark:visited {color: #ff4e33;}
+      input[type="submit"],
+      button.page-template-page-home #bio,
+      .ninja-forms-field-error {background: #ff4e33; color: #ffffff;}
+    	input[type="submit"] {border:2px solid #ff4e33}
+      .page-template-page-home #bio {background: #0b2d72; }
+
+      .action.secondary a:link, .action.secondary a:visited, a.action.secondary:link, a.action.secondary:visited, 
+      .ninja-forms-success-msg {background: #ff4e33;color: #ffffff;}
+
+    	    	h1.site-title a {color: ;}
+
+
+    	      body,
+      body.page-template-announcement > footer a:link, body.page-template-announcement > footer a:visited,
+      body.page-template-announcement section,
+      body.page-template-page-home > header nav ul li a:link, body.page-template-page-home > header nav ul li a:visited  {color: #2c3e50;}
+      body.page-template-page-home > header nav ul,
+      body.page-template-announcement,
+      #content, #content > header h6,
+      .page-template-page-home #bio div, #issues article,
+      p.paid-for,
+      .thankYou,
+      #issues ul {background-color: #ffffff ; color: #08234f;}
+      p.paid-for {border-color:#2c3e50;}
+
+      body.page-template-announcement section > header > h2 {background-color: #0b2d72 ;color: #ffffff;}
+      body.page-template-announcement section,
+      body.page-template-announcement section > header > h2 {border-color:#0b2d72;}
+      body:not(.page-template-page-home):not(.page-template-announcement) > header ul, body:not(.page-template-page-home):not(.page-template-announcement) > header {background-color: #ffffff;}
+      body:not(.page-template-page-home) > header nav ul li a:link, body:not(.page-template-page-home) > header nav ul li a:visited {color: #08234f;}
+
+      body.page-template-page-home,
+      body.page-template-announcement section {background-color: #f2f2f2;}
+      body > footer > div.widget,
+      body.page-template-page-home #marquee .widget,
+      #issues > header h6,
+      #issues > section > header {background-color: #0b2d72;}
+      #content > section > header,
+      footer .widget h2,
+      #marquee label {color: #ffffff;}
+      #issues > header {background-color: #0b2d72;color:#ffffff;}
+      body > footer { background-color: #fbfbfb; }
+      body > footer p:not(.paid-for),
+      body > footer div.vcard,
+      body > footer h2,
+      body > header > a:link,
+      body > footer a:link, body > footer a:visited {color: #2c3e50;}
+      #issues a:visited,
+      #issues a:link {color: #0b2d72;}
+    	      input:not([type="submit"]), textarea {color: #0c1216; background: #d7dadb;}
+
+
+      body.page-template-page-home #bio {background: #0b2d72;}
+
+                                           </style>
+
+  
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-58396211-19']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+
+<body class="page page-id-52 page-template-default candidate-teresa">
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+			</nav><!-- #access -->
+			<header role="banner">
+        <nav role="navigation">
+          <h5 id="menu"><svg viewBox="0 0 48 40"><use xlink:href="/wp-content/themes/candidate/images/menu.svg#menu"></use></svg>Menu</h5>
+  				<ul id="menu-primary-navigation" class="menu"><li id="menu-item-549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549"><a href="https://votelaurafriedman.com/">Home</a></li>
+<li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-52 current_page_item menu-item-557"><a href="https://votelaurafriedman.com/bio/">Issues</a></li>
+<li id="menu-item-558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-558"><a href="https://votelaurafriedman.com/endorsements/">Endorsements</a></li>
+<li id="menu-item-839" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-839"><a href="https://votelaurafriedman.com/news/">Campaign News</a></li>
+<li id="menu-item-556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556"><a href="https://votelaurafriedman.com/contactus/">Contact Us</a></li>
+<li id="menu-item-559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-559"><a href="https://votelaurafriedman.com/photos/">Photos</a></li>
+<li id="menu-item-623" class="icon twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-623"><a href="https://twitter.com/laurafriedman43">Twitter</a></li>
+<li id="menu-item-624" class="icon facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-624"><a href="https://www.facebook.com/VoteLauraFriedman2013?fref=ts">Facebook</a></li>
+</ul>        </nav>
+
+        
+				
+					<h1 class="site-title"><a href='https://votelaurafriedman.com/' title='Laura Friedman for Assembly' rel='home'><img src='https://votelaurafriedman.com/files/2015/11/logo.png' alt='Laura Friedman for Assembly'></a></h1>
+
+				
+			</header>
+
+<section id="single" role="main">
+			<article class="post" id="post-52">
+			<header>
+				<h2>Issues</h2>
+			</header>
+			
+			<p><strong>ENVIRONMENT</strong></p>
+<p>&nbsp;</p>
+<p>Laura Friedman is uncompromising in her commitment to halting climate change through mandating increased utilization and development of clean energy, and sustainable methods of transportation of people and goods. We must preserve open space as well as add to our urban forest, as plants clean and cool the air. We must invest in water conservation, capture and storage, groundwater basin protection and recharge, and a robust recycled water infrastructure. Pedestrian and bicycle infrastructure, as well as public transportation, must be a priority. Enacting stronger vehicle emissions standards is one of the keys to reducing greenhouse gasses.</p>
+<p>Laura has spent six years serving on the board of the Metropolitan Water District Board of Directors in order to learn more about water resources and to be a voice for the environment at MWD. Laura believes that our water challenges would be best served by reducing the reliance on imported water through major investments in Southern California groundwater recharge and clean-up, expanding local storage for rain and storm water collection, conservation and water system efficiency and advanced water recycling.</p>
+<p>Laura will fight for regulations requiring that new chemicals and products be proven completely safe before being allowed to come to market, as too often regulators are playing “catch-up” after a substance begins to look problematic. The financial impact of delays caused by a stricter safety testing standard pales in comparison to the cost born by the public when dangerous products and chemicals are introduced into the environment.</p>
+<p>Parks, recreation facilities, and open space are crucial to creating healthy communities. Some areas of Los Angeles county are so dense and park-poor that residents congregate in strip-malls and children to play in streets. Urban children are disconnected with nature, overweight partially because they don&#8217;t live near open space in which they can run and play, and forced to breath dirty air because of a lack of living plant material in their neighborhoods.</p>
+<p>California should institute a policy of no-net loss of state parks so that new parkland is created if any land is lost. The State government already helps communities create parks through grants, and I would support increasing this funding. A barrier to park creation in older, denser cities is the lack of available land and reluctance to evict vulnerable residents when land is assembled. To address this, I suggest that the State help cities replace this loss of housing through low income housing funds being prioritized to low income cities forced to remove housing to create urban parks.</p>
+<p>As a City Councilmember and former Mayor of Glendale, Laura has:</p>
+<p>Successfully introduced:<br />
+• Green building standards which surpassed those of the State of California<br />
+• An ordinance requiring large new homes to incorporate sustainability features equivalent to LEED certification<br />
+• A ban on plastic bags, which took effect over a year before that of the City of LA<br />
+• A ban on anticoagulant rodent poison in City Parks<br />
+• A new streamlined rooftop solar ordinance, along with increased funding for incentives encouraging rooftop solar installations<br />
+• A resolution in support of the most comprehensive plan to revitalize the Los Angeles River. She successfully advocated for the plan before the Army Corp of Engineers<br />
+• Introduced resolutions to support the expansion and protection of the Rim of the Valley Trail and the creation of the San Gabriel Mountains National Monument<br />
+• Recently introduced an ordinance to require all developments in Glendale to surpass state storm water retention requirements (yet to return to Council for a vote)</p>
+<p>Other accomplishments:<br />
+• Has been a strong proponent of Glendale&#8217;s “zero waste” and aggressive renewable energy program<br />
+• Is the primary driver of the Glendale Bicycle Master Plan and the Safe and Healthy Streets Plan, along with a multitude of bicycle and pedestrian infrastructure improvements<br />
+• To encourage physical fitness, alternative transportation, and traffic safety, in 2011 Laura held Glendale’s first “Mayor’s Bike Ride,” with over 75 participants<br />
+• Has spearheaded Glendale&#8217;s “complete streets” policy<br />
+• In 2015, under Laura&#8217;s leadership, Glendale was awarded the Excellence in Green Region Initiative by the Southern California Association of Governments (SCAG) for its Greener Glendale Plan<br />
+• Laura was honored in 2014 with the Los Angeles League of Conservation Voters&#8217; Smith-Weiss Environmental Champion Award</p>
+<p>&nbsp;</p>
+<p><strong>WATER</strong></p>
+<p>&nbsp;</p>
+<p>Laura has spent five years serving on the board of the Metropolitan Water District Board of Directors in order to advocate for ratepayers, learn more about water resources and to be a voice for the environment at MWD. She believes our water challenges would be best served by reducing the reliance on imported water through major investments in Southern California groundwater recharge and clean-up, expanding local storage for rain and storm water collection, conservation and water system efficiency and advanced water recycling.</p>
+<p>As a Southern Californian member of the Assembly, Laura would focus efforts on making Southern California as water resilient and independent as possible. Much more can be done to foster water efficiency and consumer conservation. Currently only the largest developments are required to incorporate water-saving features.</p>
+<p>Laura believes we should:</p>
+<p>• Require net-zero development, in which new development has to comply with a no-net increase in water use standard either through onsite or offsite improvements, in addition to a mandate to retain water on-site, on all new developments regardless of size<br />
+• Require that all multi-family housing incorporate individual water meters<br />
+• Create incentives to encourage the owners of older multi-family buildings to switch to individual meters<br />
+• Recycle Gray water from showers and sinks to be used for toilets and landscaping<br />
+• Incentivize more water efficient appliances and require them in all new developments.</p>
+<p>Cooperative System</p>
+<p>The Orange County Water Replenishment District&#8217;s groundwater replenishment system and the cooperative system of replenishment between the LA County Flood Control District, the Southern California Replenishment District, the LA County Sanitation Districts and the MWD in Los Angeles County are models that should be expanded across Southern California. Waste and storm water should no longer be dumped into the Pacific Ocean, but instead be treated as a precious natural resource. Storm water should be captured in underground storage or in groundwater basins for aquifer recharge. Wastewater should be recycled and reused to the greatest extent feasible, and polluted groundwater basins should be cleaned so that they can store more recycled and storm water.</p>
+<p>Agricultural Usage</p>
+<p>Agriculture is the largest single user of water in California. The State&#8217;s antiquated water rights system often provides a financial disincentive for farms to adopt advanced water saving features and mining unlimited amounts of groundwater makes wasteful irrigation practices possible. We need to accelerate bringing rural groundwater basins into sustainable use under the new Sustainable Groundwater Management Act. The farming communities need to share the water available in those basins more fairly with local communities of farmworkers, who are also dependent on well water. In order to make this possible, it is essential that all agricultural uses become as water efficient as possible. California needs to provide both economic incentives and rules to require water efficiency in agricultural production.</p>
+<p>&nbsp;</p>
+<p><strong>THE ARTS</strong></p>
+<p>&nbsp;</p>
+<p>Laura has demonstrated that the arts can serve as a powerful economic development tool. She was instrumental in transforming the San Fernando Corridor into a business and job creation engine for Glendale through her “Creative Corridor” program, which offers specialized incentives to attract creative businesses and flexible zoning guidelines to allow a variety of uses. The program is so successful that the Glendale News Press called the Creative Corridor “The City’s Economic Bright Spot.” Recently she supported the hiring of a consultant to create a City sponsored technology incubator program to attract new businesses to Glendale.</p>
+<p>During the recession Laura created the GATE project, which transforms temporarily vacant spaces into art exhibitions to provide an innovative cultural exploration for the community, while eliminating the blighting effect of vacant storefronts. This led to a more vibrant downtown while assisting property owners to better highlight available spaces.</p>
+<p>Laura helped create an Arts Impact Fee for new developments which to date has raised millions of dollars to fund arts programs in Glendale. Laura has voted to fund large capital programs for the historic Alex Theater, for the Brand Music Library, and was instrumental in bringing the Museum of Neon Art and the world-renounced Anteaus Theater Company to Glendale. She retooled Glendale’s library program to make the arts an important priority of the Library system.</p>
+<p>Laura is committed to fully fund education at all levels to insure that California continues to lead the world in technology, entertainment and other creative industries. She will bring the arts back to our schools. Laura is committed to making the arts as much a focus of primary and secondary school as the other STEM programs so that we prepare students for a future in which creative capital is at a premium worldwide. In addition, she believes in offering free courses at community colleges to prepare film and other creative professionals for changes in technology. We will only be a leader in a global economy if we continue to have individuals who have the creativity to create the next Apple or feature film blockbuster, and Laura is committed to giving our children the tools to succeed.</p>
+<p>&nbsp;</p>
+<p><strong>BUSINESS</strong></p>
+<p>&nbsp;</p>
+<p>A HISTORY IN BUSINESS<br />
+Councilwoman Laura Friedman had a successful 20-year career as a motion picture and television executive and producer. Since 2000 she has been the owner and operator of a small business specializing in vintage jewelry and decorative arts. Her husband owns and runs Picture This Land, a landscape design/build firm. Economic development has been a priority of Laura&#8217;s since joining the Glendale City Council in 2009.</p>
+<p>CREATIVE ECONOMIC DEVELOPMENT<br />
+Laura led the way in transforming the San Fernando Corridor into a business and job creation engine for Glendale. Her Creative Corridor program offers specialized incentives to attract businesses and flexible zoning guidelines to allow a variety of uses. The program is so successful that the Glendale News Press called the Corridor “The City’s Economic Bright Spot.” Recently Laura supported the hiring of a consultant to create a City sponsored technology incubator program to attract new businesses to Glendale.</p>
+<p>STREAMLINING ENTITLEMENTS<br />
+Laura led the effort to streamline Glendale&#8217;s entitlement process, replacing the need in many cases for an expensive and unsure variance hearing with an over-the-counter, inexpensive Zoning Use Certificate. This gives businesses flexibility and a speedy entitlement process. Laura believes that this type of approach will work at the State level.</p>
+<p>CONCIERGE PROGRAM<br />
+Laura helped develop a concierge program in which businesses are assigned a single point-of-contact within the City to help them identify property and navigate all levels of the planning and entitlement process.</p>
+<p>LONGTIME SUPPORTER OF SMART DEVELOPMENT<br />
+Laura has worked to create a vibrant, walkable and bike-able community near Glendale&#8217;s job centers, while preserving residential neighborhoods. Under her leadership, Whole Foods and Avery Dennison have moved their corporate headquarters to Glendale; along with retailers such as Bloomingdales and Nordstrom’s, and dozens of new restaurants, shops and offices.</p>
+<p>FISCAL RESPONSIBILITY<br />
+The recession caused Glendale’s worst revenue declines in twenty years, yet under Laura&#8217;s leadership Glendale was able to balance the budget while maintaining a high level of service. Working with city employees, we were able to reduce payroll and pension costs allowing us to come out of the recession in strong fiscal shape. Fitch recently reaffirmed their AA+ rating on our municipal bonds saying “The rating reflects the city&#8217;s strong reserve levels, good liquidity, positive financial performance, and prudent financial policies and budgeting practices.”</p>
+<p>ELIMINATING BLIGHT THROUGH THE ARTS<br />
+Laura created the GATE project, which transforms temporarily vacant spaces into art exhibitions to provide an innovative cultural exploration for the community, while eliminating the blighting effect of vacant storefronts. This led to a more vibrant downtown while assisting property owners to better highlight available spaces.</p>
+<p>SUPPORT FROM THE BUSINESS COMMUNITY<br />
+For her support of business, in 2012 the Glendale Chamber of Commerce named Laura “Woman of the Year.” Laura is being endorsed for Assembly by business leaders Rick Caruso, CEO, Caruso Affiliated; Cynthia Kurtz, President, San Gabriel Valley Economic Partnership; Billie Greer, President, Southern California Leadership Council; Rick Lemmo and Harry Hull, Glendale Chamber of Commerce Past Presidents; Eric Hamilton and Pat Longo, Montrose-Verdugo City Chamber of Commerce Past Presidents. Don Knabe, and Los Angeles Council Members Mitch O’Farrell, and Mitch Englander.</p>
+<p>A REGIONAL PROBLEM-SOLVER<br />
+Laura is a regional problem solver, as as leadership at The Southern California Association of Governments, the Independent Cities Association and other boards shows she know how to build consensus and get things done. She is the only candidate in this race who has demonstrated over and over that she won’t be afraid to push the envelope in Sacramento to proactively tackle our biggest challenges. She is the only candidate in this race with a legislative track record of accomplishments in the areas important to the voters in the district.</p>
+<p>LAURA’S PLANS FOR CALIFORNIA</p>
+<p>Laura will bring the aggressive economic development approach she has spearheaded in Glendale to the State. Instead of by-the-rules bureaucrat who are quick to say “no,” we need government officials who are empowered to make decisions and who have a customer-service mentality. Laura will introduce a small-business initiative that is well funded so that small business and start-ups can receive help to get up and running.</p>
+<p>Sacramento must make it easier to do business in California. Laura will work to streamline regulations and entitlements, reduce costs and fees for business, particular for small business, just as she has done in Glendale. She has the know-how and demonstrated ability to make California a leader in the global economic marketplace.</p>
+<p>Laura is committed to fully funding education at all levels to insure that California continues to lead the world in technology and other creative industries. We should offer free courses at community colleges to prepare film and other creative professionals for changes in technology. We should make the arts just as much a focus of primary and secondary school as the other STEM programs so that we prepare students for a future in which creative capital is at a premium worldwide.</p>
+<p>&nbsp;</p>
+<p><strong>POVERTY</strong></p>
+<p>&nbsp;</p>
+<p>Although California is leading the nation out of the recession, we continue to have one of the largest populations in the nation per capita of residents living or falling below the poverty line. Laura believes that Sacramento must focus on poverty in a holistic manner and develop comprehensive strategies to address it incorporating all of the factors affecting poverty including education, healthcare, childcare, economic development, housing, and how we deliver social services.</p>
+<p>As our population ages, Laura is particularly concerned about the lack of access to, and the gaps in funding for, assisted living and nursing homes in Los Angeles County. Anyone who has had to choose between caring for an elderly parent at home or using their child’s college fund to pay for a decent nursing home knows how disruptive and potentially devastating this issue can be. She will fight to have assisted living and quality nursing home care covered by California’s insurance exchanges.</p>
+<p>No parent should have to choose between holding a job and quality child-care. Every child should have access to licensed and affordable child care providers. Laura will work to make state funded universal pre-K a reality.</p>
+<p>We must increase our commitment to fully funding all levels of education, from providing quality and affordable child care to making sure that every deserving student has access to affordable job training or college. Public schools should be fully funded, with special attention given to those in low-income neighborhoods. All qualified students should be able to attend college, regardless of their ability to pay.</p>
+<p>&nbsp;</p>
+<p><strong>EDUCATION</strong></p>
+<p>&#8220;As Chair of the Assembly Education Committee, I am supporting Laura Friedman because she will be a strong ally in the fight to improve California&#8217;s public schools. Laura Friedman will work to improve teacher training and professional development and compensation so we can attract and retain the best teachers in the nation.&#8221;</p>
+<p style="text-align: center">&#8211;Patrick O&#8217;Donnell, State Assemblymember</p>
+<p>Education is one of Laura’s very top priorities. In an environment filled with economic unfairness, and in which the rich continue to get richer and the middle class is struggling, education is the great equalizer, with the ability to set the groundwork for a better life for individuals and families. Education is one of the most important antidotes to poverty. It is far more effective to spend money educating individuals than to provide social services to workers who lack the education and skills needed for well-paying jobs.</p>
+<p>However, our precious public education system in California is woefully underfunded. In fact, education funding is at an historic low-point. This has left hundreds of thousands of Californians, and our State, unprepared to compete in what is increasingly a global economy. The economic health of people and of our State depends on our willingness to increase funding for and to generally strengthen our educational system.</p>
+<p>Laura Friedman is committed to making sure public schools are fully funded, with special attention given to those in low-income neighborhoods. All qualified students should be able to attend college, regardless of their ability to pay. We must fund education to the level required to insure a high-quality education for all students rather than by students rather than legislated statutory minimums. No parent should have to choose between holding a job and quality child-care. Every child should have access to licensed and affordable child care providers. Laura will fight for universal P-K.</p>
+<p>&nbsp;</p>
+<p><strong>ENTERTAINMENT INDUSTRY JOBS</strong></p>
+<p>&nbsp;</p>
+<p>As a longtime executive in the entertainment industry, Laura will be a strong champion for entertainment industry jobs upon which the region is dependent.</p>
+<p>Laura believes that we should focus on all the reasons the entertainment industry is leaving California. Establishing film tax credits were an important first step, but as a 20-year entertainment industry veteran, Laura understand all the stressors on our most important industry. Corporate consolidation, cheap international labor and production costs, rapid changes in film-making technology, and intellectual property theft are all threats to regional film production. With her years of experience in film and television, Laura will be a leader in Sacramento at developing policy to address these issues.</p>
+<p>While on the Glendale City Council, Laura introduced a low-budget and student film permit program to allow low and no-budget film projects to shoot legally in Glendale. Currently Glendale is a major destination for film and television shoots at all budget levels.</p>
+<p>Laura is committed to fully fund education at all levels to insure that California continues to lead the world in technology, entertainment and other creative industries. She believes in offering free courses at community colleges to prepare film and other creative professionals for changes in technology. She will make the arts just as much a focus of primary and secondary school as the other STEM programs so that we prepare students for a future in which creative capital is at a premium worldwide.</p>
+<p>&nbsp;</p>
+<p><strong>LAURA&#8217;S BIO</strong></p>
+<p>&nbsp;</p>
+<p>Laura Friedman is running to succeed Mike Gatto in the California State Assembly, District 43.  Laura has an extraordinary record of leadership as a local elected leader, a community volunteer and in the private sector.</p>
+<p>Elected to the Glendale City Council in 2009, re-elected in 2013</p>
+<p>Mayor of Glendale, 2011-2012</p>
+<p>Board of Directors, Metropolitan Water District of Southern California</p>
+<p>Immediate Past-President, Independent Cities Association</p>
+<p>Board member, Southern California Association of Governments, Energy and Environment Committee</p>
+<p>Served for five years on the Glendale Design Review Board</p>
+<p>Active with the Society of Architectural Historians and the Los Angeles Conservancy Modern Committee</p>
+<p>Extensive experience as a producer and head of development in the entertainment industry where she worked on numerous successful films and TV projects.  Taught producing at UCLA and Chapman College</p>
+<p>Since 2001 she has owned and run a small business specializing in vintage jewelry and fine and decorative arts</p>
+<p>Recipient: <em>Environmental Champion Award</em>, Los Angeles League of Conservation Voters; <em>Woman of the Year,</em> Glendale Chamber of Commerce<em>; Flame of Hope Award</em>, Glendale Adventist Medical Center</p>
+<p>Laura lives in Glendale with her husband Guillaume Lemoine, a landscape designer, and their daughter Rachel.</p>
+<p>Graduated with a B.A. from the University of Rochester, New York.</p>
+						
+			
+ 
+		</article>
+
+	
+  	
+</section>
+
+
+
+<footer>
+	    <div>
+
+		<h1 class="site-title"><a href='https://votelaurafriedman.com/' title='Laura Friedman for Assembly' rel='home'><img src='https://votelaurafriedman.com/files/2015/11/logo.png' alt='Laura Friedman for Assembly'></a></h1>
+
+	  
+  <p class="copyright">&copy; 2016 Copyright Laura Friedman for Assembly 2016</p>
+  
+  
+  <a class="privacy" href="https://votelaurafriedman.com/privacy-policy/">Privacy Policy</a>
+  
+  </div>
+  <nav role="navigation">
+		<ul id="menu-footer-navigation" class="menu"><li id="menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a href="https://votelaurafriedman.com/">Home</a></li>
+<li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-52 current_page_item menu-item-847"><a href="https://votelaurafriedman.com/bio/">Issues</a></li>
+<li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="https://votelaurafriedman.com/news/">Campaign News</a></li>
+<li id="menu-item-846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-846"><a href="https://votelaurafriedman.com/endorsements/">Endorsements</a></li>
+<li id="menu-item-849" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-849"><a href="https://votelaurafriedman.com/contactus/">Contact Us</a></li>
+<li id="menu-item-850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-850"><a href="https://votelaurafriedman.com/dear-friends/">Join Laura&#8217;s Team!</a></li>
+</ul>    
+		  </nav>
+	<!-- <p><a href="https://votelaurafriedman.com/feed/">Entries (RSS)</a></p> -->
+
+  <div>
+        <a class="action" href="//secure.actblue.com/contribute/page/laurafriedman" >Contribute</a></h3>
+			    <div id="" class="vcard">
+      <div class="org">Laura Friedman for Assembly 2016</div>
+      <div class="adr">
+        <div class="street-address">1009 N. Pacific Ave #4451</div>
+        <span class="locality">Glendale</span>, <span class="region">CA</span>, <span class="postal-code">91222</span>
+        <div class="phone-number"></div>
+      </div> 
+      <a class="email" href="https://votelaurafriedman.com/contactus/">Contact</a>
+    
+    </div>
+  </div>
+  <div class="legal">
+		        <p class="paid-for state">Paid For By Laura Friedman for Assembly 2016 ID#1368792</p>
+	</div>
+</footer>
+
+<script defer src="/wp-content/themes/candidate/js/main.min.js?v=1447776130"></script>
+<script type="application/javascript">
+	Modernizr.load ({
+	test : Modernizr.mq('only all') ,
+	nope : ['/wp-content/themes/bower_components/respond/dest/respond.min.js']
+});
+</script>
+
+<script type='text/javascript' src='https://votelaurafriedman.com/wp-includes/js/wp-embed.min.js?ver=42cc87ddadc32a8fd22064b784ec1dca'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3085cc542b","applicationID":"4055620","transactionName":"NVxbbEYEDBBWVBJcXAwWbEpdSgsNU1IeG0MKSQ==","queueTime":0,"applicationTime":3,"atts":"GRtYGg4eHx4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

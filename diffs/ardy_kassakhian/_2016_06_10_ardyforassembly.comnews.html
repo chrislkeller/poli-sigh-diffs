@@ -1,0 +1,662 @@
+      <!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"b908402cd3","applicationID":"1237919,13960630","transactionName":"clhXTRQOW10BQBsRWVZSShYVCVhG","queueTime":1,"applicationTime":68,"agent":"","atts":"ShVMG1waFUQWXhZbGllDTUlcThhGE0UaAEpVTl9WFABEQgFfVg1BH1RWVEkPUkYXEBhDVlBDUFYIPkRdEVUWWxpQRV1ARE0VVQVGVQNZQlIbA0QRRV4AR1cVUV5ZZlgSDVZfEFNrVBodFUtcFRFYXxdbVg1dbkNcWAtDDRMRXFcNWVhaXF1ETRVFBVVHQwITWE1RAxMVTBk="}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(e,n){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,n)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var c=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],f="api-";i(c,function(e,n){newrelic[n]=r(f+n,"api")}),i(u,function(e,n){newrelic[n]=r(f+n)}),n.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?c(e,a,i):i()}function t(t,r,o){e&&e(t,r,o);for(var i=n(o),a=l(t),c=a.length,u=0;c>u;u++)a[u].apply(i,r);var s=f[m[t]];return s&&s.push([w,t,r,i]),i}function p(e,n){g[e]=l(e).concat(n)}function l(e){return g[e]||[]}function d(e){return s[e]=s[e]||o(t)}function v(e,n){u(e,function(e,t){n=n||"feature",m[t]=n,n in f||(f[n]=[])})}var g={},m={},w={on:p,emit:t,get:d,listeners:l,context:n,buffer:v};return w}function i(){return new r}var a="nr@context",c=e("gos"),u=e(2),f={},s={},p=n.exports=o();p.backlog=f},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!b++){var e=y.info=NREUM.info,n=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){u(m,function(n,t){e[n]||(e[n]=t)});var t="https"===g.split(":")[0]||e.sslForHttp;y.proto=t?"https://":"http://",c("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+e.agent,n.parentNode.insertBefore(r,n)}}}function o(){"complete"===s.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=e("handle"),u=e(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-952.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=n.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader"]);</script>
+  <title>News - Ardy Kassakhian for Assembly</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="http://ardy.nationbuilder.com/themes/2/565c15f3ebad643497000001/0/attachments/14488755701462435384/default/theme.scss" type="text/css" />
+  <link rel="stylesheet" href="http://ardy.nationbuilder.com/themes/2/565c15f3ebad643497000001/0/attachments/14488755701462435384/default/tablet-and-desktop.scss" type="text/css" media="screen and (min-width: 768px)" />
+
+  <!-- because ie8 ignores media queries, we need this -->
+  <!--[if IE 8]>
+    <link rel="stylesheet" href="http://ardy.nationbuilder.com/themes/2/565c15f3ebad643497000001/0/attachments/14488755701462435384/default/tablet-and-desktop.scss" type="text/css" />
+  <![endif]-->
+
+
+  <!--[if IE]>
+  <link rel="stylesheet" href="ie.scss" type="text/css" />
+  <![endif]-->
+
+  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="rDfG1ftIZv9kpecLoclzueozkGHTEtIPTGoXY1tzB1s=" name="csrf-token" />
+
+  <link rel="canonical" href="http://www.ardyforassembly.com/news" />
+    <link rel="alternate" type="application/rss+xml" href="http://www.ardyforassembly.com/news.rss" title="RSS 2.0">
+    <meta name="Title" content="News">
+    <meta property="og:title" content="News"/>
+  <meta property="og:url" content="http://www.ardyforassembly.com/news">
+    <meta property="og:type" content="blog">
+      <link rel="image_src" href="http://d3n8a8pro7vhmx.cloudfront.net/ardy/sites/2/meta_images/original/logo.jpg?1448874909" />
+      <meta property="og:image" content="http://d3n8a8pro7vhmx.cloudfront.net/ardy/sites/2/meta_images/original/logo.jpg?1448874909" />
+  <meta property="og:site_name" content="Ardy Kassakhian for Assembly"/>
+
+<script type="text/javascript">
+  var NB = NB || {};
+
+  NB.environment = "production";
+  NB.pageId = "47";
+  NB.Liquid = NB.Liquid || {};
+</script>
+
+<script type="text/javascript">
+    //<![CDATA[
+      window._auth_token_name = "authenticity_token";
+      window._auth_token = "rDfG1ftIZv9kpecLoclzueozkGHTEtIPTGoXY1tzB1s=";
+    //]]>
+</script>
+
+
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/cupertino/jquery-ui.css" type="text/css" media="all">
+
+      <link rel="icon" type="image/x-icon" href="http://d3n8a8pro7vhmx.cloudfront.net/ardy/sites/2/favicon_images/original/favicon.ico?1449339588" />
+
+<script src="//d3n8a8pro7vhmx.cloudfront.net/assets/liquid/main-3c351b9ed37425d2c8ae25c96d00b475.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+    js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+
+<script type="text/javascript">
+  NB.FBAppId = '126739610711965';
+</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '//apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+  <script type="text/javascript">
+    var _qevents = _qevents || [];
+
+    (function() {
+     var elem = document.createElement('script');
+
+     elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+     elem.async = true;
+     elem.type = "text/javascript";
+     var scpt = document.getElementsByTagName('script')[0];
+     scpt.parentNode.insertBefore(elem, scpt);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    NB.appConfig.userIsLoggedIn = false;
+  </script>
+
+  <script type="text/javascript" src="https://fast.fonts.net/jsapi/94719232-fbaf-4775-b8dc-08cb5cfed4d8.js"></script>
+  
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Lato:400,400italic|Titillium+Web:600|Roboto+Slab:700|Oswald' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://ardy.nationbuilder.com/themes/2/565c15f3ebad643497000001/0/attachments/14488755701462435384/default/jquery.ui.effect.min.js"></script>
+  <script type="text/javascript" src="http://ardy.nationbuilder.com/themes/2/565c15f3ebad643497000001/0/attachments/14488755701462435384/default/verve.js"></script>
+
+  
+
+</head>
+<body class="aware-theme v2-theme page-type-blog js ">
+  <div id="pattern" class="pattern">
+    <div class="wrap" id="wrap">
+      <div id="body" class="page-pages-show-blog">
+
+        <div class="header-container clearfix ">
+          <div class="width-container clearfix">
+
+            <div class="header-login-container">
+              
+              
+              <div class="sidebar-trigger desktop-visible tablet-visible"><i class="icon-cog2"></i></div>
+              
+              
+              
+              <div class="header-login desktop-visible">
+                <span>Sign in:</span>&emsp;<a href="/users/twitter/connect?page_id=47">Twitter</a>&emsp;&emsp;&middot;&emsp;&emsp;<a href="https://site-ardy.nationbuilder.com/users/facebook/connect?page_id=47&scope=public_profile%2Cemail">Facebook</a>&emsp;&emsp;&middot;&emsp;&emsp;<a href="/login">email</a>&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;<a href="donate">Donate</a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.facebook.com/ArdyforAssembly" target="_blank"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/565c15f3ebad643497000001/attachments/original/1449440512/facebook.png?1449440512" alt="Facebook" width="24" height="24" border="0" /></a>&emsp;&emsp;&emsp;<a href="https://twitter.com/ArdyforAssembly" target="_blank"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/565c15f3ebad643497000001/attachments/original/1449440514/twitter.png?1449440514" alt="Twitter" width="24" height="24" border="0" /></a>&emsp;&emsp;&emsp;<a href="https://www.instagram.com/ArdyforAssembly" target="_blank"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/565c15f3ebad643497000001/attachments/original/1449440513/instagram.png?1449440513" alt="Instagram" width="24" height="24" border="0" /></a>&emsp;&emsp;&emsp;<a href="https://www.youtube.com/channel/UCwlWoWe2RPY-2gdD6hXjUmg" target="_blank"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/565c15f3ebad643497000001/attachments/original/1449440516/youtube.png?1449440516" alt="YouTube" width="24" height="24" border="0" /></a>
+              </div>
+              
+            </div>
+
+            
+<!-- _nav.html -->
+<nav id="menu" role="navigation">
+  <ul id="topnav" class="topnav desktop-nav">
+    <li >
+      <a href="/">Home</a>
+    </li><li >
+      <a href="/meet_ardy">Meet Ardy</a>
+    </li><li class="active">
+      <a href="/news">News</a>
+    </li><li >
+      <a href="/record">Record</a>
+    </li><li >
+      <a href="/issues">Issues</a>
+    </li><li >
+      <a href="/endorsements">Endorsements</a>
+    </li><li >
+      <a href="/district">District</a>
+    </li><li class="drop">
+      <a href="/media">Media <i class="icon-angle-down"></i></a>
+      <ul class="sub">
+        
+        <li class="show-parent mobile-visible"><a href="/media">Media</a></li>
+        
+        
+        <li><a href="/photos">Photos</a></li>
+        
+        <li><a href="/videos">Videos</a></li>
+        
+      </ul>
+    </li><li class="drop">
+      <a href="/join">Join <i class="icon-angle-down"></i></a>
+      <ul class="sub">
+        
+        <li class="show-parent mobile-visible"><a href="/join">Join</a></li>
+        
+        
+        <li><a href="/volunteer">Volunteer</a></li>
+        
+        <li><a href="/donate">Donate</a></li>
+        
+        <li><a href="/sign_up">Sign Up</a></li>
+        
+        <li><a href="/contact">Contact</a></li>
+        
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<a href="#menu" class="menu-link"><i class="icon-menu"></i></a>
+<!-- /_nav.html -->
+
+
+            
+              <div class="site-logo">
+                <header><a href="/"><img src="http://d3n8a8pro7vhmx.cloudfront.net/ardy/sites/2/meta_images/original/logo.jpg?1448874909"></a></header>
+              </div>
+            
+
+          </div>
+          <!-- .width-container -->
+        </div>
+        <!-- .header-container -->
+
+        
+
+        
+
+        <div class="main-container" id="middle">
+          <div class="main width-container  clearfix">
+
+            
+
+            <div id="flash_container">
+
+
+</div>
+
+
+            <div class="content-pages-show-blog">
+              
+<!-- _breadcrumbs.html -->
+
+
+
+
+<!-- /_breadcrumbs.html -->
+
+
+
+
+<div id="content">
+
+  
+
+  <div class="blog" id="blog-page-47">
+    
+    <div class="page-excerpt" id="blog-post-page-137">
+
+      
+      
+
+      <div class="excerpt-child postcard">
+
+        
+        <div class="excerpt-postcard-image" style="background-image: url('https://d3n8a8pro7vhmx.cloudfront.net/ardy/pages/137/attachments/original/1465412669/Ardy-for-Assembly-June-7-Primary-Election.jpg?1465412669')">
+          <a href="/were_ready_to_finish_this_fight"></a>
+        </div>
+        
+      
+        <h3><a href="/were_ready_to_finish_this_fight">We're Ready to Finish This Fight</a></h3>
+
+        <div class="byline-abbreviated">Jun 08, 2016</div>
+
+        <div class="excerpt">
+          A Message from Ardy Kassakhian
+          
+          <span class="read-more"><a href="/were_ready_to_finish_this_fight">Continue reading</a></span>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-132">
+
+      
+      
+
+      <div class="excerpt-child ">
+
+        
+      
+        <h3><a href="/video_how_to_buy_an_election">Video: How to Buy An Election</a></h3>
+
+        <div class="byline-abbreviated">May 28, 2016</div>
+
+        <div class="excerpt">
+          
+People Power. That’s what this campaign has been about since Day 1. Don’t let special interests pouring millions from outside of this district buy your vote. Stand with democratic leaders, grassroots organizations, educators, teachers, nurses, police and firefighters against this historic effort by Dark Money groups to buy this election and steal it away from the voters. Election Day is just around the corner. Watch. Share. Vote. www.ArdyForAssembly.com
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-131">
+
+      
+      
+
+      <div class="excerpt-child postcard">
+
+        
+        <div class="excerpt-postcard-image" style="background-image: url('https://d3n8a8pro7vhmx.cloudfront.net/ardy/pages/131/attachments/original/1464240769/Nayiri-Nahabedian-Letter.jpg?1464240769')">
+          <a href="/setting_the_record_straight_an_important_letter_about_the_misinformation_campaign_against_ardy"></a>
+        </div>
+        
+      
+        <h3><a href="/setting_the_record_straight_an_important_letter_about_the_misinformation_campaign_against_ardy">SETTING THE RECORD STRAIGHT: An Important Letter About the Misinformation Campaign Against Ardy</a></h3>
+
+        <div class="byline-abbreviated">May 25, 2016</div>
+
+        <div class="excerpt">
+          An Important Letter About the Misinformation Campaign Against Ardy
+          
+          <span class="read-more"><a href="/setting_the_record_straight_an_important_letter_about_the_misinformation_campaign_against_ardy">Continue reading</a></span>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-130">
+
+      
+      
+
+      <div class="excerpt-child ">
+
+        
+      
+        <h3><a href="/congressman_eliot_engel_endorses_ardy_kassakhian_for_assembly">Congressman Eliot Engel Endorses Ardy Kassakhian for Assembly</a></h3>
+
+        <div class="byline-abbreviated">May 23, 2016</div>
+
+        <div class="excerpt">
+          Ardy Kassakhian today announced that Congressman Eliot Engel (NY-16) has endorsed his campaign for Assembly District 43. A member of the U.S. House of Representatives since 1989, Engel has served as the Ranking Member of the powerful Committee on Foreign Affairs and is a member of the Congressional Armenian Caucus. “I’m proud to join my colleagues in endorsing Ardy Kassakhian for California State Assembly,” stated Congressman Eliot Engel. “Ardy stands out for his extraordinary commitment to public service. I particularly value his strong understanding of critical issues not only at the local and state levels but also at the national level."
+          
+          <span class="read-more"><a href="/congressman_eliot_engel_endorses_ardy_kassakhian_for_assembly">Continue reading</a></span>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-129">
+
+      
+      
+
+      <div class="excerpt-child postcard">
+
+        
+        <div class="excerpt-postcard-image" style="background-image: url('https://d3n8a8pro7vhmx.cloudfront.net/ardy/pages/129/attachments/original/1463681910/May_18_Press_Conference_in_Front_of_Glendale_City_Hall.JPG?1463681910')">
+          <a href="/community_expresses_outrage_over_special_interest_expenditures_in_california_43rd_assembly_race"></a>
+        </div>
+        
+      
+        <h3><a href="/community_expresses_outrage_over_special_interest_expenditures_in_california_43rd_assembly_race">Community Expresses Outrage Over Special Interest Expenditures in California 43rd Assembly Race</a></h3>
+
+        <div class="byline-abbreviated">May 19, 2016</div>
+
+        <div class="excerpt">
+          Education leaders gathered to jointly condemn the California Charter Schools Association and the Laura Friedman for Assembly campaign for disseminating misinformation to voters and trying to buy the 43rd California Assembly race. The press conference featured over a dozen community leaders including Los Angeles Unified School Board President Steve Zimmer and Glendale Board of Education Member Christine Walters.
+          
+          <span class="read-more"><a href="/community_expresses_outrage_over_special_interest_expenditures_in_california_43rd_assembly_race">Continue reading</a></span>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-128">
+
+      
+      
+
+      <div class="excerpt-child ">
+
+        
+      
+        <h3><a href="/assemblymember_evan_low_endorses_ardy_kassakhian_for_assembly">Assemblymember Evan Low Endorses Ardy Kassakhian for Assembly</a></h3>
+
+        <div class="byline-abbreviated">May 12, 2016</div>
+
+        <div class="excerpt">
+          Ardy Kassakhian today announced that California State Assemblymember and Assistant Majority Whip Evan Low has endorsed his campaign to represent the 43rd Assembly District. The Co-Chair of the Legislative Technology and Innovation Caucus, Assemblymember Evan Low became the youngest Asian American legislator at the age of 31 to have been elected to the Assembly in 2014. Assistant Majority Whip Evan Low joins a large group of current and former members of the state legislature who have endorsed Ardy Kassakhian, including President pro Tempore of the State Senate Kevin de León, Assembly Speaker Emeritus John A. Pérez, Assembly Majority Leader Ian Calderon, Assemblymember Lorena Gonzalez, Assemblymember Jackie Goldberg (ret.) and two former Assemblymembers who represented District 43: former Majority Leader Dario Frommer and Los Angeles City Councilmember Paul Krekorian. “Ardy has been a leader on progressive issues from improving transparency and efficiency in Glendale to ensuring equality for all Californians,” stated Assembly Assistant Majority Whip Evan Low (D- Silicon Valley). “I’m looking forward to partnering with him on education issues and creating new jobs in the innovation economy. He’s the type of visionary leader we need here in the State Assembly.”
+          
+          <span class="read-more"><a href="/assemblymember_evan_low_endorses_ardy_kassakhian_for_assembly">Continue reading</a></span>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-134">
+
+      
+      
+
+      <div class="excerpt-child ">
+
+        
+      
+        <h3><a href="/video_educators_for_ardy">Video: Educators for Ardy</a></h3>
+
+        <div class="byline-abbreviated">May 10, 2016</div>
+
+        <div class="excerpt">
+          
+Our children are our future, and we need to invest in California’s future. As your next Assemblymember, I’ll fight to make sure our schools have the funding they need.
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-127">
+
+      
+      
+
+      <div class="excerpt-child ">
+
+        
+      
+        <h3><a href="/california_teamsters_public_affairs_council_endorses_ardy_kassakhian_for_assembly">California Teamsters Public Affairs Council Endorses Ardy Kassakhian for Assembly</a></h3>
+
+        <div class="byline-abbreviated">May 10, 2016</div>
+
+        <div class="excerpt">
+          Ardy Kassakhian today announced that the California Teamsters Public Affairs Council has endorsed his campaign for Assembly District 43. Representing over 250,000 Teamster members and their families across the state, the announcement follows an early endorsement for Kassakhian from Teamsters Joint Council 42. “The Fight for $15 has become a reality, but we still have a lot of work to do on behalf of California’s working families,” stated Ardy Kassakhian. “As your next Assemblymember, I will fight to keep good jobs in our state, and ensure that the people who work hard every day have the protections to do their jobs. I’m very proud to have earned the support of the California Teamsters Public Affairs Council in our efforts to fight for the working people of our great state.”
+          
+          <span class="read-more"><a href="/california_teamsters_public_affairs_council_endorses_ardy_kassakhian_for_assembly">Continue reading</a></span>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-126">
+
+      
+      
+
+      <div class="excerpt-child ">
+
+        
+      
+        <h3><a href="/assemblymember_lorena_gonzalez_endorses_ardy_kassakhian_for_assembly">Assemblymember Lorena Gonzalez Endorses Ardy Kassakhian for Assembly</a></h3>
+
+        <div class="byline-abbreviated">May 09, 2016</div>
+
+        <div class="excerpt">
+          Ardy Kassakhian today announced that California State Assemblymember Lorena Gonzalez has endorsed his campaign to represent the 43rd Assembly District. Having served in the State Legislature since 2013, Assemblymember Lorena Gonzalez is the first Latina in California history to Chair the Appropriations Committee. “During his decade of service to the residents of Glendale, Ardy has worked hard to increase civic participation, modernize the operation of the clerk’s office and increase transparency, while saving tax payer dollars,” stated Assemblymember Lorena Gonzalez. “Ardy has deep roots in the community and understands the challenges facing our state. He will make a strong advocate for the working families of the 43rd Assembly District and I am proud to support him.”
+          
+          <span class="read-more"><a href="/assemblymember_lorena_gonzalez_endorses_ardy_kassakhian_for_assembly">Continue reading</a></span>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="page-excerpt" id="blog-post-page-124">
+
+      
+      
+
+      <div class="excerpt-child ">
+
+        
+      
+        <h3><a href="/los_angeles_mayor_eric_garcetti_endorses_ardy_kassakhian_for_assembly">Los Angeles Mayor Eric Garcetti Endorses Ardy Kassakhian for Assembly</a></h3>
+
+        <div class="byline-abbreviated">May 04, 2016</div>
+
+        <div class="excerpt">
+          Ardy Kassakhian today announced that Los Angeles Mayor Eric Garcetti has endorsed his campaign for Assembly District 43. Mayor Garcetti joins a long list of Los Angeles Democratic leaders who are backing Kassakhian’s candidacy, including L.A. Councilmembers David Ryu and Paul Krekorian, L.A. Community College Board President Scott J. Svonkin, and LAUSD Board President Steve Zimmer. The major endorsement from L.A.’s top official cements Kassakhian’s standing as the clear front-runner in the race. “Ardy Kassakhian has made a real difference in the effort to promote justice and protect voting rights, and in the State Assembly he will fight for better schools, safe neighborhoods and keeping entertainment industry jobs right here,” Mayor Eric Garcetti said. “I’m proud to add my voice to Ardy’s growing coalition of supporters.”
+          
+          <span class="read-more"><a href="/los_angeles_mayor_eric_garcetti_endorses_ardy_kassakhian_for_assembly">Continue reading</a></span>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+
+  <div class="pagination"><ul><li class="disabled"><a href="http://www.ardyforassembly.com/news?page=" class="disabled">&laquo;</a></li><li class="active"><a href="#" class="active">1</a></li><li><a href="http://www.ardyforassembly.com/news?page=2">2</a></li><li><a href="http://www.ardyforassembly.com/news?page=3">3</a></li><li><a href="http://www.ardyforassembly.com/news?page=4">4</a></li><li><a href="http://www.ardyforassembly.com/news?page=5">5</a></li><li><a href="http://www.ardyforassembly.com/news?page=6">6</a></li><li><a href="http://www.ardyforassembly.com/news?page=7">7</a></li><li><a href="http://www.ardyforassembly.com/news?page=2">&raquo;</a></li></ul></div>
+</div>
+            </div>
+
+          </div>
+          <!-- .main -->
+
+          
+          <div class="mobile-supporter-nav mobile-visible">
+
+            
+
+            
+              <ul class="supporter-nav">
+                <li>
+                  <a href="http://www.ardyforassembly.com/news.rss"><i class="icon-rss"></i> Subscribe with RSS</a>
+                </li>
+              </ul>
+              
+
+            
+
+          </div>
+          
+
+        </div>
+        <!-- .main-container -->
+
+
+        <footer>
+
+          <div class="width-container clearfix">
+
+            <div class="row-fluid">
+
+              <div class="span4 footer-left footer-supporter-tiles-wrap">
+                
+                <h4>Powered by people like you</h4>
+                <div class="footer-supporter-tiles clearfix">
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/1053934651.jpg" border="0" width="72" height="72" class="profile_image" title="Gagik Galfayan" />
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/1258790503.jpg" border="0" width="72" height="72" class="profile_image" title="Yishu Dai" />
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/122765720.jpg" border="0" width="72" height="72" class="profile_image" title="Syuzanna Petrosyan" />
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/2469778783.jpg" border="0" width="72" height="72" class="profile_image" title="Arthur Kokozian" />
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/253769656.jpg" border="0" width="72" height="72" class="profile_image" title="Evan Low" />
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/12728232.jpg" border="0" width="72" height="72" class="profile_image" title="Argam Derhartunian" />
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/144239106.jpg" border="0" width="72" height="72" class="profile_image" title="Stepan Baghdassarian" />
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/2259949398.jpg" border="0" width="72" height="72" class="profile_image" title="Andre Panossian" />
+                  
+                  <img src="http://res.cloudinary.com/nationbuilder/image/twitter/w_73,h_73,c_fill,d_buddy1.png/15681595.jpg" border="0" width="72" height="72" class="profile_image" title="Teni Melidonian" />
+                  
+                  <img src="https://graph.facebook.com/v2.2/998843423486386/picture?height=73&type=square&width=73" border="0" width="72" height="72" class="profile_image" title="Ман Арманян" />
+                  
+                </div>
+                
+              </div>
+
+              <div class="span6 footer-left footer-content">
+                
+                <p><strong>Ardy for Assembly Campaign Headquarters</strong><br>1700 W. Glenoaks Blvd., Unit L, Glendale, CA 91201<br>(818) 856-0955 | <a href="mailto:info@ardyforassembly.com">Info@ArdyforAssembly.com</a></p>
+<p>Paid for by Ardy Kassakhian For State Assembly 2016 (FPPC ID# 1366018)</p>
+                
+                
+                <p>Sign in with <a href="https://site-ardy.nationbuilder.com/users/facebook/connect?page_id=47&scope=public_profile%2Cemail">Facebook</a>, <a
+                  href="/users/twitter/connect?page_id=47">Twitter</a> or <a href="/login">email</a>.</p>
+                
+                <!-- The NationBuilder link below is required. If it is removed, we may add it back ourselves.
+                     You can style it or move it in different ways, but please leave it in the footer. -->
+                <p>Created with <a href="http://nationbuilder.com/">NationBuilder</a></p>
+                <p>
+                  
+                  
+                  <span class="footer-social-button"><fb:like href="http://www.ardyforassembly.com/" layout="button" action="like" show_faces="false" share="false"></fb:like></span>
+                  
+                </p>
+              </div>
+
+              <div class="span2 footer-right footer-social-links">
+                
+                
+              </div>
+
+            </div>
+
+            <div id="fb-root"></div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 126739610711965,
+      channelUrl : "//site-ardy.nationbuilder.com/channel.html",
+      status     : true,
+      version    : "v2.3",
+      cookie     : true,
+      xfbml      : true
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.async = true;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<script src="//d3n8a8pro7vhmx.cloudfront.net/assets/liquid-d4f2b2e96287b5d6bcbdde4a0f4c8c85.js" type="text/javascript"></script>
+<script src="//d3n8a8pro7vhmx.cloudfront.net/assets/tinymce-jquery-b16bb09336f0e7f04e5e1d9228b0b6e8.js" type="text/javascript"></script>
+
+  	<iframe src="//www.ardyforassembly.com/session_pair_phase_1" width="1" height="1" style="display: none;"></iframe>
+
+
+  <script type="text/javascript">
+  _qevents.push(
+  	{ qacct:"p-5ftmjaPECGTTU" }
+  	);
+  </script>
+
+  <noscript>
+  <div style="display: none;"><img src="//pixel.quantserve.com/pixel?a.1=p-5ftmjaPECGTTU" height="1" width="1" alt="Quantcast"/></div>
+  </noscript>
+
+
+
+          </div>
+
+        </footer>
+
+        <!-- .width-container -->
+
+      </div>
+      <!-- #body -->
+    </div>
+    <!-- #wrap -->
+    
+    <div class="sidebar desktop-visible">
+
+      
+
+      <ul class="supporter-nav">
+
+        
+          <ul class="supporter-nav">
+            <li>
+              <a href="http://www.ardyforassembly.com/news.rss"><i class="icon-rss"></i> Subscribe with RSS</a>
+            </li>
+          </ul>
+          
+
+      </ul>
+
+      
+
+    </div>
+    
+    <!-- .sidebar -->
+  </div>
+  <!-- #pattern -->
+
+
+
+</body>
+</html>
+
