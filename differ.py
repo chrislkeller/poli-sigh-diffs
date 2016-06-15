@@ -7,7 +7,7 @@ import shutil
 import requests
 from requests.packages.urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
-
+from fabric.api import task, env, run, local, roles, cd, execute, hide, puts, sudo, prefix
 
 logger = logging.getLogger("root")
 logging.basicConfig(
@@ -46,6 +46,9 @@ class GrabWebSite(object):
             this_dir = os.path.join(self.data_directory, site["dir"])
             self.make_a_dir(this_dir)
             self._request_results_and_save(site, this_dir)
+        local("git add .")
+        local("git commit -m 'updates with new diffs'")
+        local("git push")
 
     def _request_results_and_save(self, site, data_directory):
         """
